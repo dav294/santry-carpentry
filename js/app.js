@@ -108,6 +108,22 @@ document.addEventListener('DOMContentLoaded', () => {
     opacity: 0, scale: 0.82, duration: 0.62, stagger: 0.1, ease: 'back.out(1.6)',
   });
 
+  // ── Portfolio ──
+  fadeUp('.section-header', '#portfolio', { y: 24 });
+  gsap.from('.port-item', {
+    scrollTrigger: { trigger: '.portfolio-grid', start: 'top 82%' },
+    opacity: 0,
+    y: 50,
+    scale: 0.96,
+    duration: 0.7,
+    stagger: { amount: 0.55, from: 'start' },
+    ease: 'power3.out',
+  });
+  gsap.from('.portfolio-cta', {
+    scrollTrigger: { trigger: '.portfolio-cta', start: 'top 88%' },
+    opacity: 0, y: 24, duration: 0.65, ease: 'power3.out',
+  });
+
   // ── About ──
   gsap.from('.about-img-col', {
     scrollTrigger: { trigger: '#about', start: 'top 78%' },
