@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fadeUp('.pillar', '.pillars', { y: 52, stagger: 0.15 });
 
   // ── Services ──
-  fadeUp('.section-header', '#services', { y: 28 });
+  fadeUp('#services .section-header', '#services', { y: 28 });
   gsap.from('.service-card', {
     scrollTrigger: { trigger: '.services-grid', start: 'top 82%' },
     opacity: 0, y: 60, duration: 0.65, stagger: { amount: 0.55, from: 'start' }, ease: 'power3.out',
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ── Portfolio ──
-  fadeUp('.section-header', '#portfolio', { y: 24 });
+  fadeUp('#portfolio .section-header', '#portfolio', { y: 24 });
   gsap.from('.port-item', {
     scrollTrigger: { trigger: '.portfolio-grid', start: 'top 82%' },
     opacity: 0,
