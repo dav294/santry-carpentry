@@ -3,9 +3,9 @@ import * as THREE from 'three';
 const canvas = document.getElementById('hero-canvas');
 if (!canvas) throw new Error('hero-canvas not found');
 
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: false });
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
-renderer.setClearColor(0x0C0B09, 1);
+renderer.setClearColor(0x000000, 0); // transparent — hero bg image shows through
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 200);
@@ -56,8 +56,6 @@ const mat = new THREE.PointsMaterial({
 const points = new THREE.Points(geo, mat);
 scene.add(points);
 
-// ── Subtle background fog colour (matches body bg) ──
-scene.fog = new THREE.FogExp2(0x0C0B09, 0.018);
 
 // ── Resize ──
 function onResize() {
