@@ -1,0 +1,27 @@
+AI IMAGES NEEDED — SANTRY CARPENTRY
+=====================================
+
+Generate or source the following images and save them with these exact filenames:
+
+SERVICE CARDS (1200x800px recommended, dark / moody style):
+- wardrobes.jpg      — Floor-to-ceiling bespoke fitted wardrobe, dark interior, premium finish, ambient light
+- kitchens.jpg       — Modern fitted kitchen, dark cabinets, clean lines, professional install
+- stairs.jpg         — Elegant staircase renovation, timber treads, modern balustrade, warm lighting
+- skirting.jpg       — Crisp white/grey skirting boards and architrave freshly fitted against a dark wall
+- tv-units.jpg       — Custom built-in TV unit with alcove shelving, living room, dark finish
+- understairs.jpg    — Under-stairs storage cupboard with fitted shelves and pull-out drawers
+
+ABOUT SECTION (portrait orientation, ~800x1000px):
+- about.jpg          — Carpenter at work, hands on timber, warm workshop lighting, craftsman feel
+
+LOGO:
+Place in assets/logo/ folder:
+- logo.svg or logo.png — Santry Carpentry logo (once received from client)
+  Then swap the <span class="logo-text"> in index.html with:
+  <img src="assets/logo/logo.svg" alt="Santry Carpentry" class="logo-img">
+
+STYLE NOTES:
+- Dark, moody, premium feel to match the site's dark background (#0C0B09)
+- Warm amber/golden accents where possible
+- Clean, uncluttered compositions
+- Portrait of craftsman should feel authentic (not stock-photo generic)

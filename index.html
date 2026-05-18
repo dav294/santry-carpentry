@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Santry Carpentry — Dublin's trusted bespoke carpenters. Fitted wardrobes, kitchens, staircases, skirting & more. Free quotes for Dublin 9, 11 and beyond." />
+  <title>Santry Carpentry | Bespoke Carpentry Dublin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <!-- DROP YOUR LOGO HERE: replace the span below with <img src="assets/logo/logo.svg" alt="Santry Carpentry" class="logo-img"> -->
+        <span class="logo-text">Santry<strong> Carpentry</strong></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Free Quote</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Get a Quote</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Dublin's Trusted Bespoke Carpenters</p>
+      <h1 class="hero-title">
+        <span class="hero-line">Handcrafted</span>
+        <span class="hero-line hero-accent">for your home.</span>
+        <span class="hero-line">Built to last.</span>
+      </h1>
+      <p class="hero-sub">Fitted wardrobes, kitchens, staircases &amp; more — designed around your space and crafted to perfection. Serving Dublin 9, 11 and beyond.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        <a href="#services" class="btn btn-ghost">View Services</a>
+      </div>
+    </div>
+    <div class="hero-line-scroll"></div>
+  </section>
+
+  <!-- ===== PROBLEM ===== -->
+  <section id="problem" class="section">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-left">
+          <span class="tag">The Problem</span>
+          <h2 class="section-heading">Generic furniture never quite fits your home — or your life.</h2>
+          <p class="body-copy">Flat-pack pieces that don't match your walls. Cheap materials that warp within a year. Rooms that feel cluttered no matter what you try. Your home deserves better than off-the-shelf compromises.</p>
+          <p class="body-copy muted">You've been making it work. It's time to stop.</p>
+        </div>
+        <div class="problem-right">
+          <div class="pain-point">
+            <div class="pain-icon">✕</div>
+            <div class="pain-text">
+              <h4>Flat-pack that falls apart</h4>
+              <p>Chipboard that sags, swells, and shows its age within months of fitting.</p>
+            </div>
+          </div>
+          <div class="pain-point">
+            <div class="pain-icon">✕</div>
+            <div class="pain-text">
+              <h4>Wasted space in awkward rooms</h4>
+              <p>Standard sizes never account for slopes, alcoves, or irregular walls.</p>
+            </div>
+          </div>
+          <div class="pain-point">
+            <div class="pain-icon">✕</div>
+            <div class="pain-text">
+              <h4>Tradesmen who don't show up</h4>
+              <p>Vague quotes, missed start dates, and jobs that drag on for weeks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION ===== -->
+  <section id="solution" class="section section-dark">
+    <div class="container">
+      <div class="solution-wrap">
+        <span class="tag tag-light">The Solution</span>
+        <h2 class="section-heading light">Bespoke carpentry built <em>around</em> your space.</h2>
+        <p class="solution-copy">At Santry Carpentry, every piece is measured, designed, and handcrafted specifically for your home. No compromises. No generic solutions. Just precision craftsmanship that transforms the way you live.</p>
+        <div class="pillars">
+          <div class="pillar">
+            <span class="pillar-num">01</span>
+            <h4>Measured to the millimetre</h4>
+            <p>We work around your exact dimensions — slopes, alcoves, pipes and all.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-num">02</span>
+            <h4>Premium materials only</h4>
+            <p>Solid wood, quality MDF, and finishes that last decades — not months.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-num">03</span>
+            <h4>Reliable &amp; professional</h4>
+            <p>We show up when we say, finish when we say, and leave the place spotless.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">What We Do</span>
+        <h2 class="section-heading">Our Services</h2>
+        <p class="section-sub">From fitted wardrobes to full staircases — every project crafted with the same care and precision.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <!-- AI IMAGE: Bespoke floor-to-ceiling fitted wardrobe, dark interior, premium finish -->
+            <div class="service-img-bg" data-svc="wardrobes">
+              <img src="assets/images/wardrobes.jpg" alt="Fitted Wardrobes Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Fitted Wardrobes</h3>
+            <p>Floor-to-ceiling bespoke wardrobes designed around your exact dimensions. Choose your finish, handles, and internal layout.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <!-- AI IMAGE: Modern fitted kitchen, clean lines, dark cabinets -->
+            <div class="service-img-bg" data-svc="kitchens">
+              <img src="assets/images/kitchens.jpg" alt="Kitchen Fitting Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Kitchen Fitting</h3>
+            <p>Expert kitchen unit installation — full new kitchens to single unit replacements. Precise fitting, clean results.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <!-- AI IMAGE: Elegant staircase renovation, timber treads, modern balustrade -->
+            <div class="service-img-bg" data-svc="stairs">
+              <img src="assets/images/stairs.jpg" alt="Staircase Installation Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Staircases</h3>
+            <p>New installations and full renovations — balustrades, handrails, treads, and risers. Transformed safely and beautifully.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <!-- AI IMAGE: Crisp white skirting boards and architrave, freshly fitted -->
+            <div class="service-img-bg" data-svc="skirting">
+              <img src="assets/images/skirting.jpg" alt="Skirting Boards Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Skirting &amp; Architrave</h3>
+            <p>Crisp, clean second-fix carpentry. Skirting boards, architraves, and door casings fitted to a flawless standard.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <!-- AI IMAGE: Custom built-in TV unit with alcove shelving, living room -->
+            <div class="service-img-bg" data-svc="tvunits">
+              <img src="assets/images/tv-units.jpg" alt="TV Units and Alcoves Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>TV Units &amp; Alcoves</h3>
+            <p>Custom media walls, TV units, and alcove shelving — built-in storage solutions that make your living space work harder.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <!-- AI IMAGE: Under-stairs cupboard with fitted shelves and drawers -->
+            <div class="service-img-bg" data-svc="understairs">
+              <img src="assets/images/understairs.jpg" alt="Under Stairs Storage Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Under-Stairs Storage</h3>
+            <p>Turn dead space under your stairs into practical, stylish storage — fitted shelves, drawers, or a full cupboard.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section id="stats" class="section section-amber">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-row">
+            <span class="stat-num" data-target="10">0</span>
+            <span class="stat-suf">+</span>
+          </div>
+          <p class="stat-label">Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-row">
+            <span class="stat-num" data-target="500">0</span>
+            <span class="stat-suf">+</span>
+          </div>
+          <p class="stat-label">Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-row">
+            <span class="stat-num" data-target="100">0</span>
+            <span class="stat-suf">%</span>
+          </div>
+          <p class="stat-label">Satisfaction Rate</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-row">
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-suf">★</span>
+          </div>
+          <p class="stat-label">Google Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col">
+          <!-- AI IMAGE: Carpenter at work, hands on timber, warm lighting, workshop feel -->
+          <div class="about-img-frame">
+            <img src="assets/images/about.jpg" alt="Santry Carpentry craftsman" />
+          </div>
+          <div class="about-badge">Based in Santry, Dublin 9</div>
+        </div>
+        <div class="about-text-col">
+          <span class="tag">Who We Are</span>
+          <h2 class="section-heading">Local craftsmen. Exceptional standards.</h2>
+          <p class="body-copy">We're a Dublin-based carpentry team that takes pride in every project we take on. Born and built in Santry, we've spent years perfecting our craft — fitting homes across Dublin 9, Dublin 11, and beyond.</p>
+          <p class="body-copy">We believe good carpentry isn't just about the end result — it's about the process. A clean workspace, clear communication, and a finish you'll still be proud of years down the line.</p>
+          <div class="about-values">
+            <div class="value-row"><span class="check">✓</span> Fully insured &amp; professional</div>
+            <div class="value-row"><span class="check">✓</span> Free, no-obligation quotes</div>
+            <div class="value-row"><span class="check">✓</span> Dublin-based, locally trusted</div>
+            <div class="value-row"><span class="check">✓</span> Fixed prices — no hidden costs</div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Start Your Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="process" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag tag-light">How It Works</span>
+        <h2 class="section-heading light">Simple. Transparent. Reliable.</h2>
+        <p class="section-sub light">From your first call to the final finish — here's exactly what to expect.</p>
+      </div>
+      <div class="process-list">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Free Consultation</h3>
+            <p>Get in touch and we'll arrange a visit to your home. We discuss your vision, measure the space, and understand exactly what you need — no pressure, no obligation.</p>
+          </div>
+        </div>
+        <div class="process-line"></div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Design &amp; Quote</h3>
+            <p>We'll put together a clear, itemised quote for your approval. No vague estimates, no surprise costs. Just a fair price for quality work.</p>
+          </div>
+        </div>
+        <div class="process-line"></div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Crafted With Care</h3>
+            <p>Your pieces are precision-made using premium materials. Every component built to fit your space exactly as planned.</p>
+          </div>
+        </div>
+        <div class="process-line"></div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Perfect Installation</h3>
+            <p>Our team arrives on time, works cleanly, and finishes to a standard you'll be proud of. We don't leave until you're completely happy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">What Clients Say</span>
+        <h2 class="section-heading">Trusted Across Dublin</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"Absolutely brilliant job on our fitted wardrobes. Measured perfectly, looked stunning, and the lads were tidy and professional throughout. Couldn't recommend highly enough."</p>
+          <div class="t-author">
+            <div class="t-avatar">SB</div>
+            <div>
+              <strong>Sarah B.</strong>
+              <span>Drumcondra, Dublin 9</span>
+            </div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"Had our full staircase renovated — new treads, handrail, the works. Transformed the whole look of the house. On time, fair price, no hassle. Will definitely use again."</p>
+          <div class="t-author">
+            <div class="t-avatar">MC</div>
+            <div>
+              <strong>Mark C.</strong>
+              <span>Glasnevin, Dublin 11</span>
+            </div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"Got skirting boards and architrave done throughout the house after a big renovation. Perfect finish, clean work every day, and they tidied up after themselves. Exactly what you want."</p>
+          <div class="t-author">
+            <div class="t-avatar">KO</div>
+            <div>
+              <strong>Karen O'D.</strong>
+              <span>Santry, Dublin 9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / CTA ===== -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <span class="tag tag-light">Get In Touch</span>
+          <h2 class="section-heading light">Ready to transform your home?</h2>
+          <p class="contact-intro">Get a free, no-obligation quote today. We serve Dublin 9, Dublin 11, and all surrounding areas.</p>
+          <div class="contact-details">
+            <div class="c-item">
+              <span class="c-icon">📞</span>
+              <div>
+                <span class="c-label">Call Us</span>
+                <!-- REPLACE: update with actual phone number -->
+                <a href="tel:+353000000000" class="c-val">+353 (0) XXX XXX XXXX</a>
+              </div>
+            </div>
+            <div class="c-item">
+              <span class="c-icon">✉</span>
+              <div>
+                <span class="c-label">Email Us</span>
+                <!-- REPLACE: update with actual email -->
+                <a href="mailto:info@santrycarpentry.ie" class="c-val">info@santrycarpentry.ie</a>
+              </div>
+            </div>
+            <div class="c-item">
+              <span class="c-icon">📍</span>
+              <div>
+                <span class="c-label">Based In</span>
+                <span class="c-val">Santry, Dublin 9</span>
+              </div>
+            </div>
+            <div class="c-item">
+              <span class="c-icon">📸</span>
+              <div>
+                <span class="c-label">Follow Our Work</span>
+                <a href="https://www.instagram.com/santry_carpentry_dublin/" target="_blank" rel="noopener" class="c-val">@santry_carpentry_dublin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="f-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="f-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+353 87 000 0000" />
+            </div>
+            <div class="f-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="f-group">
+              <label for="fservice">Service Required</label>
+              <select id="fservice" name="service">
+                <option value="">Select a service...</option>
+                <option value="wardrobes">Fitted Wardrobes</option>
+                <option value="kitchens">Kitchen Fitting</option>
+                <option value="staircases">Staircases</option>
+                <option value="skirting">Skirting &amp; Architrave</option>
+                <option value="tvunits">TV Units &amp; Alcoves</option>
+                <option value="understairs">Under-Stairs Storage</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="f-group">
+              <label for="fmessage">Tell Us About Your Project</label>
+              <textarea id="fmessage" name="message" placeholder="Describe your project, room size, any specific requirements..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">Santry<strong> Carpentry</strong></span>
+          <p>Bespoke carpentry crafted for Dublin homes. Quality you can see. Service you can trust.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/santry_carpentry_dublin/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/santrycarpentry/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Fitted Wardrobes</a></li>
+            <li><a href="#services">Kitchen Fitting</a></li>
+            <li><a href="#services">Staircases</a></li>
+            <li><a href="#services">Skirting &amp; Architrave</a></li>
+            <li><a href="#services">TV Units &amp; Alcoves</a></li>
+            <li><a href="#services">Under-Stairs Storage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <!-- REPLACE: update phone & email below -->
+          <p><a href="tel:+353000000000">+353 (0) XXX XXX XXXX</a></p>
+          <p><a href="mailto:info@santrycarpentry.ie">info@santrycarpentry.ie</a></p>
+          <p>Santry, Dublin 9</p>
+          <p class="footer-areas">Serving Santry · Drumcondra · Glasnevin · Whitehall · Finglas · Clontarf</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Santry Carpentry. All rights reserved.</p>
+        <p>Serving Dublin 9, 11 &amp; surrounding areas</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script type="module" src="js/scene.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
